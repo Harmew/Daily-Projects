@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cinza: #222;
+    --verde: #2e8b57;
+    --branco: #fff;
+}
+
+body {
+    background-color: #222;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 800px;
+    min-width: 500px;
+    min-height: 500px;
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+}
+
+.container .titulo {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.5em;
+    color: var(--branco);
+    padding: 20px 0;
+    border-bottom: 2px solid var(--verde);
+}
+
+.container .container-dados {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dados {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--branco);
+    padding: 10px 0;
+}
+
+.dados:first-child {
+    padding-top: 20px;
+}
+
+.dados a {
+    color: var(--branco);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.sobre {
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.container-info {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-info.active {
+    display:flex;
+    pointer-events: all;
+    animation: entrada .3s forwards;
+}
+ 
+.info {
+    position: absolute;
+    width: 520px;
+    height: 600px;
+    background: var(--cinza);
+    border: 2px solid var(--verde);
+    z-index: 3000;  
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: var(--branco);
+    font-size: 1.2em;
+}
+
+.info .fechar {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--verde);
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    font-size: 1em;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.info .fechar:hover {
+    background-color: var(--branco);
+    border: 2px solid var(--verde);
+    color: var(--verde) ;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0.5;
+
+    }
+    to {
+        opacity: 1;
+    }
+}

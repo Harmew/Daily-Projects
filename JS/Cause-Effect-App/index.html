@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cause Effect App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-info">
+        <div class="info">
+            <button class="fechar">x</button>
+            <p>Nome:</p>        <span data-info="nome"></span>
+            <p>Telefone:</p>    <span data-info="telefone"></span>
+            <p>Email:</p>       <span data-info="email"></span>
+            <p>CPF:</p>         <span data-info="CPF"></span>
+            <p>CEP:</p>         <span data-info="CEP"></span>
+            <p>Nascimento:</p>  <span data-info="nascimento"></span>
+            <p>Logradouro:</p>  <span data-info="logradouro"></span>
+            <p>Número:</p>      <span data-info="numero"></span>
+            <p>Bairro:</p>      <span data-info="bairro"></span>
+            <p>Cidade:</p>      <span data-info="cidade"></span>
+            <p>Estado:</p>      <span data-info="estado"></span>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="titulo">
+            <p>Pessoas</p>
+            <p>Telefone</p>
+            <p>Sobre</p>
+        </div>
+        <div class="container-dados">
+            <div class="dados">
+                <p id="nome"></p>
+                <p id="telefone"></p>
+                <img class="sobre imagem" onclick="pegarDados(event)" src="img/user.png" alt="info">
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

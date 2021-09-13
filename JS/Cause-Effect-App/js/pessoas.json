@@ -1,0 +1,54 @@
+[
+    {
+        "nome" : "Daniel de Oliveira",
+        "telefone": "41977161810",    
+        "email": "dann.ew@outlook.com",
+        "cpf": "09773026940",
+        "cep": "83466370",
+        "nascimento": "07-11-2003",
+        "logradouro": "Rua Seipe",
+        "numero": "35",
+        "bairro": "Campo Pequeno",
+        "cidade": "Colombo",
+        "estado": "Parana"
+    },
+    {
+        "nome": "Everton Porceli",
+        "telefone": "41999999999",
+        "email": "evertib@live.com",
+        "cpf": "01234567891",
+        "cep": "02345678",
+        "nascimento": "26-10-1996",
+        "logradouro": "Rua Joao",
+        "numero": "15",
+        "bairro": "Centro",
+        "cidade": "Curitiba",
+        "estado": "Parana"
+    },
+    {
+        "nome": "Davi Rodrigues",
+        "telefone": "2191231412",
+        "email": "davi@email.com",
+        "cpf": "12345678912",
+        "cep": "12345678",
+        "nascimento": "07-11-2003",
+        "logradouro": "Rua 2",
+        "numero": "123",
+        "bairro": "Centro",
+        "cidade": "Juiz de Fora",
+        "estado": "Minas Gerais"
+    },
+    {
+        "nome": "Marcos Rodrigo",
+        "telefone": "489934334332",
+        "email": "mrodrigues@gmail.com",
+        "cpf": "09766677703",
+        "cep": "9837243940",
+        "nascimento": "19-04-19957",
+        "logradouro": "Avenida Paraná",
+        "numero": "2003",
+        "bairro": "Sergipe",
+        "cidade": "Petropolis",
+        "estado": "Amapá"
+    }
+]

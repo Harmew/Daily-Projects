@@ -1,0 +1,115 @@
+:root {
+  --verde: #2e8b57;
+  --cinza: #323232;
+  --branco: #fff;
+  --font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--cinza);
+  font-family: var(--font)
+}
+
+body {  
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: var(--verde);
+
+}
+
+.resultado {
+  background-color: var(--verde);
+  color: var(--branco);
+  border-radius: 10px;
+  border: 2px solid var(--branco);
+  padding: 15px;
+  width: 160px;
+  position: relative;
+  bottom: -300px;
+}
+
+.resultado:hover {
+  background-color: var(--branco);
+  color: var(--verde);
+  border: 2px solid var(--verde);
+}
+
+.numeros {
+  background-color: var(--branco);
+  border: 2px solid var(--branco);
+  outline: none;
+}
+
+.numero1 {
+  width: 40px;
+  position: relative;
+  top: -107px;
+  left: -110px;
+}
+
+.numero2 {
+  width: 40px;
+  position: relative;
+  top: 193px;
+  left: 230px;
+}
+
+.numero3 {
+  width: 40px;
+  position: relative;
+  top: 174px;
+  left: -110px;
+}
+
+.numero4 {
+  width: 40px;
+  position: relative;
+  top: -164px;
+  left: 230px;
+}
+
+@media (max-width: 700px) {
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+  .numero1 {
+    top: -56px;
+    left: -60px;
+  }
+  .numero2 {
+    top: 144px;
+    left: 180px;
+  }
+  .numero3 {
+    top: 123px;
+    left: -60px;
+  }
+  .numero4 {
+    top: -113px;
+    left: 180px;
+  }
+  .resultado {
+    bottom: -200px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
